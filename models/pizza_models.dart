@@ -1,10 +1,14 @@
 import 'package:json_annotation/json_annotation.dart';
 
+part 'pizza_models.g.dart';
+
 @JsonSerializable()
 class PizzaModel {
   PizzaModel({this.name, this.price, this.image, this.description, this.id});
+
   factory PizzaModel.fromJson(Map<String, dynamic> json) =>
       _$PizzaModelFromJson(json);
+
   final String? name;
   final int? price;
   final String? id;

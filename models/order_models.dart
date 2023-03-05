@@ -2,6 +2,8 @@
 
 import 'package:json_annotation/json_annotation.dart';
 
+part 'order_models.g.dart';
+
 @JsonSerializable()
 class OrderModel {
   OrderModel(
@@ -15,6 +17,7 @@ class OrderModel {
 
   factory OrderModel.fromJson(Map<String, dynamic> json) =>
       $OrderModelFromJson(json);
+
   Map<String, dynamic> toJson() => $OrderModelToJson(this);
   final String? userId;
   final String? pizzaId;
