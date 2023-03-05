@@ -17,6 +17,7 @@ class PizzaModel {
   Map<String, dynamic> toJson() => _$PizzaModelToJson(this);
 }
 
+/*
 PizzaModel _$PizzaModelFromJson(Map<String, dynamic> json) {
   return PizzaModel(
     name: json['name'] as String?,
@@ -35,3 +36,4 @@ Map<String, dynamic> _$PizzaModelToJson(PizzaModel instance) =>
       'description': instance.description,
       'id': instance.id
     };
+*/

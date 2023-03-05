@@ -1,5 +1,5 @@
-import '../models/order_models.dart';
-import '../models/pizza_models.dart';
+import '../lib/models/order_models.dart';
+import '../lib/models/pizza_models.dart';
 
 List<PizzaModel> pizzas = [
   PizzaModel.fromJson(

@@ -1,6 +1,6 @@
 import 'package:dart_frog/dart_frog.dart';
 
-import '../utlis/constant.dart';
+import '../utils/constant.dart';
 
 Response onRequest(RequestContext context) {
   //check if the request is a GET request

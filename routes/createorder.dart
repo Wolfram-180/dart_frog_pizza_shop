@@ -2,8 +2,8 @@
 
 import 'package:dart_frog/dart_frog.dart';
 
-import '../models/order_models.dart';
-import '../utlis/constant.dart';
+import '../lib/models/order_models.dart';
+import '../utils/constant.dart';
 
 Future<Response> onRequest(RequestContext context) async {
   //check if the request is a POST request

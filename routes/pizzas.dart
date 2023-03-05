@@ -1,7 +1,7 @@
 import 'package:dart_frog/dart_frog.dart';
 
-import '../models/pizza_models.dart';
-import '../utlis/constant.dart';
+import '../lib/models/pizza_models.dart';
+import '../utils/constant.dart';
 
 Response onRequest(RequestContext context) {
   //check if the request is a GET request
