@@ -7,7 +7,7 @@ class PizzaModel {
       _$PizzaModelFromJson(json);
   final String? name;
   final int? price;
-  final String? id;
+  final int? id;
   final String? image;
   final String? description;
   Map<String, dynamic> toJson() => _$PizzaModelToJson(this);
@@ -19,7 +19,7 @@ PizzaModel _$PizzaModelFromJson(Map<String, dynamic> json) {
     price: json['price'] as int?,
     image: json['image'] as String?,
     description: json['description'] as String?,
-    id: json['id'] as String?,
+    id: json['id'] as int?,
   );
 }
 

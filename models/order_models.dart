@@ -21,7 +21,7 @@ class OrderModel {
   final String? address;
   final String? phoneNumber;
   final String? status;
-  final int id;
+  final int? id;
 }
 
 OrderModel $OrderModelFromJson(Map<String, dynamic> json) {
@@ -31,7 +31,7 @@ OrderModel $OrderModelFromJson(Map<String, dynamic> json) {
     json['address'] as String?,
     json['phone_number'] as String?,
     json['status'] as String?,
-    json['id'] as int,
+    json['id'] as int?,
   );
 }
 
