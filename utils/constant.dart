@@ -48,26 +48,26 @@ List<PizzaModel> pizzas = [
 List<OrderModel> orders = [
   OrderModel.fromJson({
     'id': 1,
-    'user_id': 1,
-    'pizza_id': 6,
+    'userId': 1,
+    'pizzaId': 6,
     'address': '1234 Main St',
-    'phone_number': '1234567890',
+    'phoneNumber': '1234567890',
     'status': 'pending'
   }),
   OrderModel.fromJson({
     'id': 2,
-    'user_id': 1,
-    'pizza_id': 50,
+    'userId': 1,
+    'pizzaId': 50,
     'address': '1234 Main St',
-    'phone_number': '1234567890',
+    'phoneNumber': '1234567890',
     'status': 'pending'
   }),
   OrderModel.fromJson({
     'id': 3,
-    'user_id': 123,
-    'pizza_id': 74,
+    'userId': 123,
+    'pizzaId': 74,
     'address': '1234 Main St',
-    'phone_number': '1234567890',
+    'phoneNumber': '1234567890',
     'status': 'pending'
   }),
 ];
