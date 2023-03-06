@@ -2,7 +2,7 @@
 
 import 'package:dart_frog/dart_frog.dart';
 
-import '../lib/models/order_models.dart';
+import 'package:dart_frog_pizza_shop/models/order_models.dart';
 import '../utils/constant.dart';
 
 Future<Response> onRequest(RequestContext context) async {

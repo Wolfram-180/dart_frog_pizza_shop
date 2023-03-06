@@ -1,6 +1,6 @@
 import 'package:dart_frog/dart_frog.dart';
 
-import '../lib/models/pizza_models.dart';
+import 'package:dart_frog_pizza_shop/models/pizza_models.dart';
 import '../utils/constant.dart';
 
 Response onRequest(RequestContext context) {
