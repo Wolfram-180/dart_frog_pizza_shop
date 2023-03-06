@@ -1,4 +1,4 @@
-// ignore_for_file: lines_longer_than_80_chars
+// ignore_for_file: lines_longer_than_80_chars, public_member_api_docs
 
 import 'package:json_annotation/json_annotation.dart';
 
@@ -16,9 +16,9 @@ class OrderModel {
   );
 
   factory OrderModel.fromJson(Map<String, dynamic> json) =>
-      $OrderModelFromJson(json);
+      _$OrderModelFromJson(json);
 
-  Map<String, dynamic> toJson() => $OrderModelToJson(this);
+  Map<String, dynamic> toJson() => _$OrderModelToJson(this);
   final String? userId;
   final String? pizzaId;
   final String? address;
@@ -27,6 +27,7 @@ class OrderModel {
   final int id;
 }
 
+/*
 OrderModel $OrderModelFromJson(Map<String, dynamic> json) {
   return OrderModel(
     json['user_id'] as String?,
@@ -47,3 +48,4 @@ Map<String, dynamic> $OrderModelToJson(OrderModel instance) =>
       'status': instance.status,
       'id': instance.id,
     };
+*/
