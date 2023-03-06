@@ -6,18 +6,28 @@ part 'pizza_models.g.dart';
 
 @JsonSerializable()
 class PizzaModel {
-  PizzaModel({this.name, this.price, this.image, this.description, this.id});
+  PizzaModel({
+    this.name,
+    this.price,
+    this.image,
+    this.description,
+    this.id,
+    this.size,
+  });
 
   factory PizzaModel.fromJson(Map<String, dynamic> json) =>
       _$PizzaModelFromJson(json);
 
+  Map<String, dynamic> toJson() => _$PizzaModelToJson(this);
+
   final String? name;
-  final int? price;
   final String? id;
+  final int? price;
   final String? image;
   final String? description;
-  Map<String, dynamic> toJson() => _$PizzaModelToJson(this);
+  final int? size;
 }
+
 
 /*
 PizzaModel _$PizzaModelFromJson(Map<String, dynamic> json) {

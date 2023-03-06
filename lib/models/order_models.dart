@@ -7,25 +7,27 @@ part 'order_models.g.dart';
 @JsonSerializable()
 class OrderModel {
   OrderModel(
+    this.id,
     this.userId,
     this.pizzaId,
     this.address,
     this.phoneNumber,
     this.status,
-    this.id,
   );
 
   factory OrderModel.fromJson(Map<String, dynamic> json) =>
       _$OrderModelFromJson(json);
 
   Map<String, dynamic> toJson() => _$OrderModelToJson(this);
+
+  final int id;
   final String? userId;
   final String? pizzaId;
   final String? address;
   final String? phoneNumber;
   final String? status;
-  final int id;
 }
+
 
 /*
 OrderModel $OrderModelFromJson(Map<String, dynamic> json) {
