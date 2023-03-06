@@ -8,7 +8,7 @@ part of 'order_models.dart';
 
 OrderModel _$OrderModelFromJson(Map<String, dynamic> json) => OrderModel(
       json['id'] as int,
-      json['userId'] as String?,
+      json['userId'] as int?,
       json['pizzaId'] as String?,
       json['address'] as String?,
       json['phoneNumber'] as String?,

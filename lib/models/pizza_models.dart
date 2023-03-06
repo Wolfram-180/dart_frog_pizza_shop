@@ -21,8 +21,8 @@ class PizzaModel {
   Map<String, dynamic> toJson() => _$PizzaModelToJson(this);
 
   final String? name;
-  final String? id;
-  final int? price;
+  final int? id;
+  final double? price;
   final String? image;
   final String? description;
   final int? size;

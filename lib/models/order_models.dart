@@ -21,7 +21,7 @@ class OrderModel {
   Map<String, dynamic> toJson() => _$OrderModelToJson(this);
 
   final int id;
-  final String? userId;
+  final int? userId;
   final String? pizzaId;
   final String? address;
   final String? phoneNumber;

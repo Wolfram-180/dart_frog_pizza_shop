@@ -8,10 +8,10 @@ part of 'pizza_models.dart';
 
 PizzaModel _$PizzaModelFromJson(Map<String, dynamic> json) => PizzaModel(
       name: json['name'] as String?,
-      price: json['price'] as int?,
+      price: (json['price'] as num?)?.toDouble(),
       image: json['image'] as String?,
       description: json['description'] as String?,
-      id: json['id'] as String?,
+      id: json['id'] as int?,
       size: json['size'] as int?,
     );
 
