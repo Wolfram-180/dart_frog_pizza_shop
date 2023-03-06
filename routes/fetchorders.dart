@@ -15,7 +15,6 @@ Response onRequest(RequestContext context) {
       userId = int.parse(params['user_id'] ?? '0');
       final userOrders = orders.where(
         (element) => element.userId == userId,
-        // orElse: () => OrderModel.fromJson({}),
       );
 
       if (userOrders.isEmpty) {
