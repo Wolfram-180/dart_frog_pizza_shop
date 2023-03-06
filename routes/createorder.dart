@@ -19,8 +19,15 @@ Future<Response> onRequest(RequestContext context) async {
           body['address'] != null &&
           body['phoneNumber'] != null) {
         //check valid pizza id
-        final isValidPizzaId =
-            pizzas.any((element) => element.id == body['pizzaId']);
+        final isValidPizzaId = pizzas.any(
+          (element) =>
+              element.id ==
+              (int.tryParse(
+                    body['pizzaId'].toString(),
+                  ) ??
+                  0),
+        );
+        // pizzas.any((element) => element.id == int.parse(body['pizzaId']) ?? '0'));
 
         if (isValidPizzaId) {
           orders.add(

@@ -3,3 +3,12 @@ curl http://localhost:8080/
 curl http://localhost:8080/fetchorders?user_id=1
 
 curl http://localhost:8080/pizzas?id=50
+
+http://localhost:8080/createorder
+body, raw, json
+{
+    "pizzaId":110, 
+    "userId":45, 
+    "address":"aba daba", 
+    "phoneNumber":"(3) 424 775"
+}
