@@ -1,3 +1,5 @@
+// ignore_for_file: lines_longer_than_80_chars
+
 import 'package:dart_frog/dart_frog.dart';
 
 //import 'package:dart_frog_pizza_shop/models/order_models.dart';
@@ -11,8 +13,8 @@ Response onRequest(RequestContext context) {
     var userId = 0;
     var isOrdersEmpty = '';
 
-    if (params.containsKey('user_id')) {
-      userId = int.parse(params['user_id'] ?? '0');
+    if (params.containsKey('userId')) {
+      userId = int.parse(params['userId'] ?? '0');
       final userOrders = orders.where(
         (element) => element.userId == userId,
       );

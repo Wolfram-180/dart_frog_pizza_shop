@@ -14,22 +14,22 @@ Future<Response> onRequest(RequestContext context) async {
       //check if body is present
       final body = await context.request.json();
       if (body != null &&
-          body['pizza_id'] != null &&
-          body['user_id'] != null &&
+          body['pizzaId'] != null &&
+          body['userId'] != null &&
           body['address'] != null &&
-          body['phone_number'] != null) {
+          body['phoneNumber'] != null) {
         //check valid pizza id
         final isValidPizzaId =
-            pizzas.any((element) => element.id == body['pizza_id']);
+            pizzas.any((element) => element.id == body['pizzaId']);
 
         if (isValidPizzaId) {
           orders.add(
             OrderModel.fromJson({
               'id': DateTime.now().millisecondsSinceEpoch.toInt(),
-              'pizza_id': body['pizza_id'],
-              'user_id': body['user_id'],
+              'pizzaId': body['pizzaId'],
+              'userId': body['userId'],
               'address': body['address'],
-              'phone_number': body['phone_number'],
+              'phoneNumber': body['phoneNumber'],
             }),
           );
           return Response.json(
