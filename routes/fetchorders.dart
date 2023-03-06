@@ -7,11 +7,17 @@ Response onRequest(RequestContext context) {
   if (context.request.method == HttpMethod.get) {
     //check if user_id is present
     final params = context.request.uri.queryParameters;
+
     if (params.containsKey('user_id')) {
-      final userId = params['user_id'];
+      final userId = int.parse(params['user_id'] ?? '0');
       final userOrders = orders.where((element) => element.userId == userId);
       if (orders.isNotEmpty) {
-        return Response.json(body: {'data': userOrders.toList()});
+        return Response.json(
+          body: {
+            'userId': userId,
+            'data': userOrders.toList(),
+          },
+        );
       }
     }
     return Response.json(body: {'message': 'User id not found'});

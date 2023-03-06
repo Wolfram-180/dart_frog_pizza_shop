@@ -11,7 +11,7 @@ Response onRequest(RequestContext context) {
 
     if (params.containsKey('id')) {
       //return the pizza with the id
-      final id = params['id'];
+      final id = int.parse(params['id'] ?? '0');
       // ignore: require_trailing_commas
       final pizza = pizzas.firstWhere(
         (element) => element.id == id,

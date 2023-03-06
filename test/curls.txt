@@ -1,2 +1,5 @@
 curl http://localhost:8080/
 
+curl http://localhost:8080/fetchorders?user_id=1
+
+curl http://localhost:8080/pizzas?id=50

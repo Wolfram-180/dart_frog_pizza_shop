@@ -22,7 +22,7 @@ class PizzaModel {
 
   final String? name;
   final int? id;
-  final double? price;
+  final num? price;
   final String? image;
   final String? description;
   final int? size;

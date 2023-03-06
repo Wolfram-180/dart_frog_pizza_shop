@@ -22,7 +22,7 @@ class OrderModel {
 
   final int id;
   final int? userId;
-  final String? pizzaId;
+  final int? pizzaId;
   final String? address;
   final String? phoneNumber;
   final String? status;
